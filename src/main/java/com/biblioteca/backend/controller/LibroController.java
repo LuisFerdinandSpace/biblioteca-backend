@@ -10,7 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/libros")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "${FRONTEND_URL}")
+
 public class LibroController {
 
     private final LibroService service;
